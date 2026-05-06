@@ -393,13 +393,157 @@ footer{padding:40px 52px;display:flex;align-items:center;justify-content:space-b
         <strong style="color:var(--amber)">Elite 12 Kickboxing</strong> — a demo gym running on TES with real data
       </div>
     </div>
-    <a id="demo-launch-btn" href="https://tes-app-lac.vercel.app/login?email=demo@tescrm.com" target="_blank" onclick="closeDemoModal()" style="display:flex;align-items:center;justify-content:center;gap:10px;background:var(--amber);color:#fff;padding:15px;border-radius:10px;font-size:15px;font-weight:700;text-decoration:none;transition:all 0.2s;margin-bottom:12px" onmouseover="this.style.background='#9a6010'" onmouseout="this.style.background='var(--amber)'">
-      Open TES Live →
+    <a id="demo-launch-btn" href="https://your-tescrm.vercel.app/login?email=demo@tescrm.com" target="_blank" onclick="closeDemoModal()" style="display:flex;align-items:center;justify-content:center;gap:10px;background:var(--amber);color:#fff;padding:15px;border-radius:10px;font-size:15px;font-weight:700;text-decoration:none;transition:all 0.2s;margin-bottom:12px" onmouseover="this.style.background='#9a6010'" onmouseout="this.style.background='var(--amber)'">
+      Open TES CRM Demo →
       <span style="font-size:11px;opacity:0.8">(opens in new tab)</span>
     </a>
     <div style="display:flex;align-items:center;gap:10px;padding:12px 16px;background:rgba(59,109,17,0.06);border:1px solid rgba(59,109,17,0.15);border-radius:8px">
       <span style="font-size:16px">💡</span>
       <div style="font-size:12px;color:var(--text-muted);line-height:1.6">All 14 OS modules loaded with real gym data. Click, edit, explore every layer — nothing you do affects anything permanent.</div>
+    </div>
+  </div>
+</div>
+
+<!-- PRIVACY POLICY MODAL -->
+<div class="modal-bg" id="privacyModal" onclick="if(event.target===this)closePrivacy()">
+  <div class="modal" style="max-width:660px;max-height:85vh;overflow-y:auto">
+    <button class="modal-x" onclick="closePrivacy()">×</button>
+    <div class="modal-badge" style="margin-bottom:14px">TES — The Elite System</div>
+    <h3 style="font-size:24px;margin-bottom:6px">Privacy Policy</h3>
+    <p style="font-size:12px;color:var(--text-muted);margin-bottom:24px">Last updated: May 2026</p>
+
+    <div style="font-size:14px;color:var(--text-muted);line-height:1.8;display:flex;flex-direction:column;gap:20px">
+      <div>
+        <strong style="color:var(--text);font-size:15px">1. Who We Are</strong>
+        <p style="margin-top:6px">TES (The Elite System) is a fitness business operating system developed and operated by Emmanuel Aneke. We provide software services to fitness businesses including gyms, personal training studios and martial arts centres. Our platform is accessible at tes-app-lac.vercel.app.</p>
+      </div>
+
+      <div>
+        <strong style="color:var(--text);font-size:15px">2. Information We Collect</strong>
+        <p style="margin-top:6px">We collect information you provide directly when you sign up for TES, including your name, email address, business name, phone number and payment information. We also collect information about how you use the platform including pages visited, features used and actions taken. If you connect third-party services such as Stripe, Google Calendar or Twilio we receive data necessary to operate those integrations.</p>
+      </div>
+
+      <div>
+        <strong style="color:var(--text);font-size:15px">3. How We Use Your Information</strong>
+        <p style="margin-top:6px">We use your information to provide and improve the TES platform, process payments, send transactional emails and SMS messages, provide customer support, and communicate important updates about your account. We do not sell your personal data to third parties. We do not use your data for advertising purposes.</p>
+      </div>
+
+      <div>
+        <strong style="color:var(--text);font-size:15px">4. Your Clients' Data</strong>
+        <p style="margin-top:6px">When you use TES to manage your gym clients you are the data controller for your clients' information. TES acts as a data processor on your behalf. You are responsible for ensuring you have the appropriate legal basis to collect and process your clients' data. We store client data securely in Supabase, a GDPR-compliant cloud database provider.</p>
+      </div>
+
+      <div>
+        <strong style="color:var(--text);font-size:15px">5. Data Storage and Security</strong>
+        <p style="margin-top:6px">Your data is stored securely using Supabase (PostgreSQL) hosted on AWS infrastructure. Payment information is processed by Stripe and is never stored on our servers. We use industry-standard encryption for data in transit and at rest. Access to your data is restricted to authorised personnel only.</p>
+      </div>
+
+      <div>
+        <strong style="color:var(--text);font-size:15px">6. Third-Party Services</strong>
+        <p style="margin-top:6px">TES integrates with the following third-party services: Stripe for payment processing, Twilio for SMS messaging, Resend for email delivery, OpenAI for AI-powered features, Google for calendar and search integrations, and Supabase for database and authentication. Each service has their own privacy policy governing their use of data.</p>
+      </div>
+
+      <div>
+        <strong style="color:var(--text);font-size:15px">7. Your Rights</strong>
+        <p style="margin-top:6px">You have the right to access, correct or delete your personal data at any time. You may export all your data from Settings → Data & Privacy within the TES platform. To request account deletion or data removal contact us at support@tescrm.com. We will respond within 30 days.</p>
+      </div>
+
+      <div>
+        <strong style="color:var(--text);font-size:15px">8. Cookies</strong>
+        <p style="margin-top:6px">TES uses essential cookies required for authentication and session management. We do not use tracking cookies or advertising cookies. You can disable cookies in your browser settings but this may affect the functionality of the platform.</p>
+      </div>
+
+      <div>
+        <strong style="color:var(--text);font-size:15px">9. Changes to This Policy</strong>
+        <p style="margin-top:6px">We may update this privacy policy from time to time. We will notify you of significant changes by email. Continued use of TES after changes are posted constitutes acceptance of the updated policy.</p>
+      </div>
+
+      <div>
+        <strong style="color:var(--text);font-size:15px">10. Contact</strong>
+        <p style="margin-top:6px">For privacy-related questions or requests contact us at: support@tescrm.com</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TERMS AND CONDITIONS MODAL -->
+<div class="modal-bg" id="termsModal" onclick="if(event.target===this)closeTerms()">
+  <div class="modal" style="max-width:660px;max-height:85vh;overflow-y:auto">
+    <button class="modal-x" onclick="closeTerms()">×</button>
+    <div class="modal-badge" style="margin-bottom:14px">TES — The Elite System</div>
+    <h3 style="font-size:24px;margin-bottom:6px">Terms of Service</h3>
+    <p style="font-size:12px;color:var(--text-muted);margin-bottom:24px">Last updated: May 2026</p>
+
+    <div style="font-size:14px;color:var(--text-muted);line-height:1.8;display:flex;flex-direction:column;gap:20px">
+      <div>
+        <strong style="color:var(--text);font-size:15px">1. Acceptance of Terms</strong>
+        <p style="margin-top:6px">By accessing or using TES — The Elite System you agree to be bound by these Terms of Service. If you do not agree to these terms do not use the platform. These terms constitute a legally binding agreement between you and TES operated by Emmanuel Aneke.</p>
+      </div>
+
+      <div>
+        <strong style="color:var(--text);font-size:15px">2. Subscription and Billing</strong>
+        <p style="margin-top:6px">TES offers a 14-day free trial with no credit card required. After the trial period a subscription of $500/month (Pro) is required to continue using the platform. Subscriptions are billed monthly in advance. You may cancel at any time and your access will continue until the end of the current billing period. No refunds are provided for partial months.</p>
+      </div>
+
+      <div>
+        <strong style="color:var(--text);font-size:15px">3. Your Account</strong>
+        <p style="margin-top:6px">You are responsible for maintaining the security of your account credentials. You must not share your login details with unauthorised parties. You are responsible for all activity that occurs under your account. Notify us immediately at support@tescrm.com if you suspect unauthorised access.</p>
+      </div>
+
+      <div>
+        <strong style="color:var(--text);font-size:15px">4. Acceptable Use</strong>
+        <p style="margin-top:6px">You may only use TES for lawful purposes and in accordance with these terms. You must not use TES to send spam or unsolicited communications, violate any applicable laws or regulations, infringe the intellectual property rights of others, or attempt to gain unauthorised access to any part of the platform.</p>
+      </div>
+
+      <div>
+        <strong style="color:var(--text);font-size:15px">5. SMS and Email Communications</strong>
+        <p style="margin-top:6px">By using TES's SMS and email features you confirm that you have obtained appropriate consent from your clients to receive communications. You are responsible for complying with all applicable laws governing electronic communications including GDPR, CAN-SPAM and TCPA where applicable. TES provides the infrastructure — you are responsible for the content and legality of messages sent to your clients.</p>
+      </div>
+
+      <div>
+        <strong style="color:var(--text);font-size:15px">6. Payment Processing</strong>
+        <p style="margin-top:6px">TES uses Stripe Connect to enable you to receive payments from your gym clients. When you connect Stripe to TES you agree to Stripe's Terms of Service. TES charges you a flat monthly subscription fee and takes no percentage of payments between you and your clients. You are responsible for your own tax obligations.</p>
+      </div>
+
+      <div>
+        <strong style="color:var(--text);font-size:15px">7. Intellectual Property</strong>
+        <p style="margin-top:6px">TES — The Elite System including its design, code, features and content is the intellectual property of Emmanuel Aneke. You are granted a limited, non-exclusive, non-transferable licence to use the platform for your business purposes. You may not copy, modify, distribute or reverse engineer any part of the platform.</p>
+      </div>
+
+      <div>
+        <strong style="color:var(--text);font-size:15px">8. Your Data</strong>
+        <p style="margin-top:6px">You retain ownership of all data you input into TES including client records, business information and content. You may export your data at any time from Settings → Data & Privacy. Upon account termination your data will be retained for 30 days before permanent deletion unless you request earlier deletion.</p>
+      </div>
+
+      <div>
+        <strong style="color:var(--text);font-size:15px">9. Service Availability</strong>
+        <p style="margin-top:6px">We aim to maintain 99.9% uptime but do not guarantee uninterrupted access to TES. Scheduled maintenance will be communicated in advance where possible. We are not liable for any losses resulting from platform downtime or service interruptions.</p>
+      </div>
+
+      <div>
+        <strong style="color:var(--text);font-size:15px">10. Limitation of Liability</strong>
+        <p style="margin-top:6px">TES is provided "as is" without warranties of any kind. To the maximum extent permitted by law TES and its operators shall not be liable for any indirect, incidental, special or consequential damages arising from your use of the platform. Our total liability shall not exceed the amount you paid for TES in the 3 months preceding the claim.</p>
+      </div>
+
+      <div>
+        <strong style="color:var(--text);font-size:15px">11. Termination</strong>
+        <p style="margin-top:6px">You may terminate your account at any time by contacting support@tescrm.com. We reserve the right to suspend or terminate accounts that violate these terms. Upon termination you will lose access to the platform at the end of your current billing period.</p>
+      </div>
+
+      <div>
+        <strong style="color:var(--text);font-size:15px">12. Changes to Terms</strong>
+        <p style="margin-top:6px">We may update these terms from time to time. We will notify you of significant changes by email at least 14 days before they take effect. Continued use of TES after changes take effect constitutes acceptance of the updated terms.</p>
+      </div>
+
+      <div>
+        <strong style="color:var(--text);font-size:15px">13. Governing Law</strong>
+        <p style="margin-top:6px">These terms are governed by the laws of England and Wales. Any disputes shall be subject to the exclusive jurisdiction of the courts of England and Wales.</p>
+      </div>
+
+      <div>
+        <strong style="color:var(--text);font-size:15px">14. Contact</strong>
+        <p style="margin-top:6px">For questions about these terms contact us at: support@tescrm.com</p>
+      </div>
     </div>
   </div>
 </div>
@@ -1297,8 +1441,8 @@ footer{padding:40px 52px;display:flex;align-items:center;justify-content:space-b
   <a href="#" class="logo"><div class="logo-mark">T</div><div class="logo-wordmark"><span class="logo-tes">TES CRM</span><span class="logo-sub">The Elite System</span></div></a>
   <div class="footer-links">
     <a href="mailto:support@tescrm.com">Contact</a>
-    <a href="#">Privacy</a>
-    <a href="#">Terms</a>
+    <a href="#" onclick="openPrivacy();return false;">Privacy Policy</a>
+    <a href="#" onclick="openTerms();return false;">Terms of Service</a>
     <a href="https://apps.apple.com/us/app/tes-trainer/id6760429827" target="_blank">TES Trainer App ↗</a>
   </div>
   <div style="font-size:12px;color:var(--text-muted)">© 2026 TES — The Elite System for Fitness</div>
@@ -1370,7 +1514,11 @@ function copyDemoField(fieldId,btnId){
   btn.style.color='#4a8a1a'
   setTimeout(()=>{btn.textContent=orig;btn.style.color='var(--amber)'},2000)
 }
-document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeModal();closeDemoModal()}})
+function openPrivacy(){document.getElementById('privacyModal').classList.add('open');document.body.style.overflow='hidden'}
+function closePrivacy(){document.getElementById('privacyModal').classList.remove('open');document.body.style.overflow=''}
+function openTerms(){document.getElementById('termsModal').classList.add('open');document.body.style.overflow='hidden'}
+function closeTerms(){document.getElementById('termsModal').classList.remove('open');document.body.style.overflow=''}
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeModal();closeDemoModal();closePrivacy();closeTerms()}})
 
 async function submitSetter(){
   const name=document.getElementById('s-name').value.trim()
